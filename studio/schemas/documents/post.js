@@ -12,6 +12,12 @@ export default {
       description: 'Titles should be catchy, descriptive, and not too long'
     },
     {
+      name: 'summary',
+      type: 'string',
+      title: 'Summary',
+      description: 'Give a brief summary of the article'
+    },
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',
