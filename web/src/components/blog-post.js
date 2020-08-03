@@ -9,7 +9,7 @@ import AuthorList from './author-list'
 import styles from './blog-post.module.css'
 
 function BlogPost (props) {
-  const {_rawBody, authors, categories, title, mainImage, summary, publishedAt} = props
+  const {_rawBody, authors, categories, title, mainImage, publishedAt} = props
   return (
     <article className={styles.root}>
       {mainImage && mainImage.asset && (
@@ -29,7 +29,7 @@ function BlogPost (props) {
         <div className={styles.grid}>
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>
-            <h3 className={styles.title}>{summary}</h3>
+
             {_rawBody && <PortableText blocks={_rawBody} />}
           </div>
           <aside className={styles.metaContent}>
